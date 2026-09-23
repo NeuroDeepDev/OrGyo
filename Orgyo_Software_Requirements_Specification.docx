@@ -1,0 +1,156 @@
+1. INTRODUCTION
+
+1.1 PURPOSE
+
+The purpose of Orgyo is to provide a centralized web-based platform that helps users discover, evaluate, and compare educational institutes, courses, and organizations according to their individual preferences and requirements.
+
+Selecting a suitable college or institute can be a time-consuming process because users often need to collect information from multiple websites, visit institutes physically, and depend on reviews or feedback whose authenticity may be difficult to determine. Orgyo aims to simplify this process by bringing relevant information, comparison factors, and user feedback together on a single platform.
+
+The system will allow users to:
+
+• Search for colleges, institutes, organizations, and courses according to their requirements.
+• Compare institutes and courses using multiple relevant factors.
+• Access information and feedback associated with the respective institute or organization.
+• Identify feedback and information provided by verified users.
+• Use verified information as an additional reference while making decisions.
+• Reduce the time, effort, and number of unnecessary physical visits required during the initial selection process.
+
+Orgyo will give higher priority to information and feedback obtained from verified users of the platform. The verification mechanism is intended to improve the reliability and usefulness of the information available to users.
+
+However, Orgyo will not guarantee that a particular institute, course, or organization is the best choice for a user. The final decision will remain with the user based on their individual requirements, preferences, and evaluation of the available information.
+
+
+1.2 SCOPE
+
+This Software Requirements Specification (SRS) document defines the scope and requirements of Orgyo, a web-based educational and organizational information platform.
+
+The primary scope of Orgyo is to assist students, particularly students who have completed their 12th standard, in discovering and comparing colleges, educational institutes, courses, and organizations according to their preferences.
+
+The system will provide users with relevant information and features that support the evaluation and comparison of different institutes and courses. These features may include institute details, course information, comparison factors, user feedback, verification-based information, and other relevant details.
+
+In addition to educational institute discovery, Orgyo may include a job and organization discovery component. Through this component, job seekers will be able to explore organizations and available job opportunities through dedicated sections of the platform.
+
+The major functionalities within the scope of Orgyo include:
+
+• User registration and authentication.
+• Searching and browsing educational institutes and organizations.
+• Searching and browsing courses and job opportunities.
+• Filtering results according to user preferences.
+• Comparing institutes and courses based on multiple factors.
+• Viewing information related to institutes, organizations, and courses.
+• Viewing feedback and reviews provided by users.
+• Identifying information provided by verified users.
+• Providing relevant information to support user decision-making.
+
+
+1.2.1 OUT OF SCOPE
+
+The following functionalities and responsibilities are outside the scope of Orgyo:
+
+1. Orgyo will not guarantee admission to any college, university, institute, or educational organization.
+
+2. Orgyo will not conduct or manage the official admission process of any institute.
+
+3. Orgyo will not make the final admission decision on behalf of an institute.
+
+4. Users may still need to physically visit an institute whenever physical verification, documentation, counselling, or other activities are required.
+
+5. Orgyo will not guarantee employment or selection for any job opportunity.
+
+6. Orgyo will not make recruitment or hiring decisions on behalf of companies or organizations.
+
+7. Orgyo will not guarantee that a user will receive a job from any organization listed on the platform.
+
+8. Orgyo will not directly request a company or organization to hire a particular user.
+
+9. Final decisions regarding admission, recruitment, selection, employment, and other administrative activities will remain with the respective institute or organization.
+
+
+1.3 DEFINITIONS, ACRONYMS AND ABBREVIATIONS
+
+1.3.1 Definitions
+
+Orgyo:
+Orgyo is a web-based platform designed to help users discover, evaluate, and compare educational institutes, courses, organizations, and job opportunities.
+
+User:
+A person who accesses and uses the Orgyo platform to search, compare, view, or provide information related to institutes, courses, organizations, or job opportunities.
+
+Student:
+A user who uses Orgyo primarily to search for educational institutes, colleges, universities, courses, or other academic opportunities.
+
+Verified User:
+A user whose association with a particular institute or organization has been verified through the verification mechanism provided by Orgyo.
+
+Institute:
+An educational institution such as a college, university, school, training institute, or other organization that provides educational programs or courses.
+
+Organization:
+A company, institution, or other entity that provides employment, educational, professional, or other relevant opportunities.
+
+Course:
+An academic, educational, professional, or training program offered by an institute or organization.
+
+Feedback:
+Information, experience, opinion, or review provided by a user regarding an institute, organization, course, or related service.
+
+Verification:
+The process used by Orgyo to confirm the authenticity or association of a user or information with a particular institute or organization.
+
+Comparison:
+The process of evaluating two or more institutes, courses, or organizations using selected factors or criteria.
+
+Job Seeker:
+A user who uses Orgyo to search for employment opportunities or organizations.
+
+
+1.3.2 Acronyms and Abbreviations
+
+SRS:
+Software Requirements Specification
+
+UI:
+User Interface
+
+UX:
+User Experience
+
+OTP:
+One-Time Password
+
+API:
+Application Programming Interface
+
+DB:
+Database
+
+URL:
+Uniform Resource Locator
+
+
+1.4 REFERENCES
+
+The following references and resources may be considered during the analysis, design, development, and documentation of the Orgyo system:
+
+1. IEEE/ISO/IEC guidelines and standards related to Software Requirements Specifications.
+
+2. Official websites of colleges, universities, educational institutes, and organizations for publicly available information.
+
+3. Official course and program information published by educational institutions.
+
+4. Publicly available employment and organizational information.
+
+5. Software engineering and web application development documentation.
+
+6. Technical documentation of the programming languages, frameworks, databases, APIs, and other technologies used to develop Orgyo.
+
+
+1.5 OVERVIEW
+
+This Software Requirements Specification document describes the requirements, scope, functionality, constraints, and overall characteristics of the Orgyo web application.
+
+Section 1 introduces Orgyo and describes its purpose, scope, definitions, abbreviations, references, and overall structure.
+
+The subsequent sections of this document will describe the overall description of the system, the users and their roles, major system functions, functional requirements, non-functional requirements, external interfaces, system constraints, assumptions, dependencies, and other requirements necessary for the development and implementation of Orgyo.
+
+The overall objective of Orgyo is to provide users with a structured and convenient platform for discovering, comparing, and evaluating educational institutes, courses, organizations, and relevant opportunities using reliable and verification-based information.
