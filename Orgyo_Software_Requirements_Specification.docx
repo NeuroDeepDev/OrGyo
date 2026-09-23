@@ -1,312 +1,194 @@
-# 1. INTRODUCTION
-
-## 1.1 PURPOSE
-
+1. INTRODUCTION
+1.1 PURPOSE
 The purpose of Orgyo is to provide a centralized web-based platform that helps users discover, filter, evaluate, and compare colleges and educational institutes according to their individual preferences, requirements, and priorities.
-
 Selecting a suitable college can be a difficult and time-consuming process because students and parents often need to collect information from multiple websites, compare different colleges manually, depend on reviews, and sometimes visit colleges physically before making a decision. Different students may also have different priorities when selecting a college. For example, one student may prioritize distance and fees, while another may prioritize placement performance, technical events, infrastructure, faculty qualifications, academic curriculum, research opportunities, or campus environment.
-
 Orgyo is designed to address this problem by allowing users to define the factors that are important to them and assign suitable preferences or priorities to those factors. Based on the user's requirements, the system will identify and present colleges that match the user's specified constraints and preferences.
-
 The system will allow users to:
-
-* Search for colleges and courses based on their requirements.
-* Specify personal preferences and priorities for different college-related parameters.
-* Define constraints such as maximum distance, preferred location, course, fee range, and other requirements.
-* Filter colleges according to specified constraints.
-* Compare colleges using multiple parameters.
-* Give different levels of priority to different parameters.
-* View relevant information about colleges, courses, faculty, infrastructure, academic curriculum, placement performance, fees, campus environment, technical events, competitions, and other relevant factors.
-* View information and feedback contributed by current students, alumni, faculty, staff, and other individuals associated with the respective college, subject to the verification mechanism of Orgyo.
-* View information collected from official, public, and other permitted external sources.
-* Identify the source and verification status of available information where applicable.
-* Evaluate colleges based on information relevant to their individual requirements.
-
+•	Search for colleges and courses based on their requirements.
+•	Specify personal preferences and priorities for different college-related parameters.
+•	Define constraints such as maximum distance, preferred location, course, fee range, and other requirements.
+•	Filter colleges according to specified constraints.
+•	Compare colleges using multiple parameters.
+•	Give different levels of priority to different parameters.
+•	View relevant information about colleges, courses, faculty, infrastructure, academic curriculum, placement performance, fees, campus environment, technical events, competitions, and other relevant factors.
+•	View information and feedback contributed by current students, alumni, faculty, staff, and other individuals associated with the respective college, subject to the verification mechanism of Orgyo.
+•	View information collected from official, public, and other permitted external sources.
+•	Identify the source and verification status of available information where applicable.
+•	Evaluate colleges based on information relevant to their individual requirements.
 The data used by Orgyo may be collected from multiple sources. These sources may include current students, alumni, faculty, staff, and other individuals associated with a college, as well as official college websites, public databases, government sources, and other permitted external sources.
-
 Orgyo will distinguish information based on its source and, where applicable, its verification status. Information provided by verified contributors may be given greater relevance in appropriate areas of the system, while external and official information will be maintained according to its respective source.
-
 The system will not determine an objectively "best" college for every user. Instead, Orgyo will determine and display colleges that are more closely aligned with the user's specified requirements and priorities. The final decision regarding the selection of a college will remain with the user.
-
 The initial version of Orgyo will primarily focus on college and educational institute discovery. However, the platform is intended to be extensible, allowing additional preference-based discovery and decision-support features to be introduced in future versions. These may include job-seeker support, organization discovery, career opportunities, and solutions for other similar real-world problems where users need to find suitable options according to their individual requirements.
-
-## 1.2 SCOPE
-
+1.2 SCOPE
 This Software Requirements Specification (SRS) document defines the scope and requirements of Orgyo, a web-based college discovery, comparison, and preference-based matching platform.
-
 The primary scope of Orgyo is to assist students, particularly students who have completed or are completing their 12th standard, in finding colleges and educational institutes according to their individual requirements and priorities.
-
 Unlike a system that simply displays a general list or ranking of colleges, Orgyo will allow users to define what factors are important to them. These factors may include, but are not limited to:
-
-* Distance from the user's preferred location.
-* Course availability.
-* College fees.
-* Placement performance.
-* Academic curriculum.
-* Faculty qualifications and achievements.
-* Infrastructure.
-* Technical and academic environment.
-* Frequency of technical events.
-* Hackathons and competitions.
-* Internship opportunities.
-* Research opportunities.
-* Campus environment.
-* Student activities.
-* Hostel and accommodation facilities.
-* Other user-defined requirements.
-
+•	Distance from the user's preferred location.
+•	Course availability.
+•	College fees.
+•	Placement performance.
+•	Academic curriculum.
+•	Faculty qualifications and achievements.
+•	Infrastructure.
+•	Technical and academic environment.
+•	Frequency of technical events.
+•	Hackathons and competitions.
+•	Internship opportunities.
+•	Research opportunities.
+•	Campus environment.
+•	Student activities.
+•	Hostel and accommodation facilities.
+•	Other user-defined requirements.
 For example, a user may specify a maximum distance of 10 kilometres from their preferred location, a particular course, a maximum fee limit, and high priorities for technical events, faculty quality, academic curriculum, infrastructure, and placement performance.
-
 Another user may assign different priorities, such as low fees, hostel facilities, campus environment, location, and placement opportunities.
-
 Therefore, the results generated by Orgyo may differ from one user to another based on their individual requirements and preferences.
-
-### 1.2.1 DATA SOURCES
-
+1.2.1 DATA SOURCES
 Orgyo will use information collected from multiple sources to build and maintain college profiles. These sources may include:
-
-1. Current students of the respective college.
-
-2. Alumni or graduated students of the respective college.
-
-3. Faculty members, staff, or other individuals associated with the respective college.
-
-4. Official college and university websites.
-
-5. Government and publicly available educational databases.
-
-6. Publicly available information from permitted external sources.
-
-7. Other legitimate and permitted sources containing relevant college-related information.
-
+1.	Current students of the respective college.
+2.	Alumni or graduated students of the respective college.
+3.	Faculty members, staff, or other individuals associated with the respective college.
+4.	Official college and university websites.
+5.	Government and publicly available educational databases.
+6.	Publicly available information from permitted external sources.
+7.	Other legitimate and permitted sources containing relevant college-related information.
 User-contributed information will be associated with the contributor's verification status wherever applicable. The system will also maintain information about the source of externally obtained data where required.
-
-### 1.2.2 PREFERENCE-BASED COLLEGE MATCHING
-
+1.2.2 PREFERENCE-BASED COLLEGE MATCHING
 The core functionality of Orgyo is preference-based college discovery and matching.
-
 The system will allow users to define:
-
-* Mandatory requirements or constraints.
-* Preferred values or ranges.
-* Relative priorities for different parameters.
-
+•	Mandatory requirements or constraints.
+•	Preferred values or ranges.
+•	Relative priorities for different parameters.
 Mandatory requirements may include conditions such as:
-
-* Maximum distance from a specified location.
-* Maximum or minimum fee.
-* Required course.
-* Preferred location.
-* Required facilities.
-* Other user-defined constraints.
-
+•	Maximum distance from a specified location.
+•	Maximum or minimum fee.
+•	Required course.
+•	Preferred location.
+•	Required facilities.
+•	Other user-defined constraints.
 Preference-based parameters may include:
-
-* Placement performance.
-* Faculty quality.
-* Faculty achievements.
-* Infrastructure.
-* Academic curriculum.
-* Technical environment.
-* Technical events.
-* Competitions and hackathons.
-* Research opportunities.
-* Campus environment.
-* Internship opportunities.
-* Other relevant parameters.
-
+•	Placement performance.
+•	Faculty quality.
+•	Faculty achievements.
+•	Infrastructure.
+•	Academic curriculum.
+•	Technical environment.
+•	Technical events.
+•	Competitions and hackathons.
+•	Research opportunities.
+•	Campus environment.
+•	Internship opportunities.
+•	Other relevant parameters.
 The system will use these requirements and preferences to filter and evaluate available colleges and present the user with colleges that match their specified criteria.
-
 The matching process will not represent an absolute ranking of colleges. It will represent the suitability of available colleges according to the specific preferences and requirements provided by the user.
-
-### 1.2.3 COLLEGE COMPARISON
-
+1.2.3 COLLEGE COMPARISON
 Orgyo will allow users to compare multiple colleges based on selected parameters.
-
 The comparison may include factors such as:
-
-* Distance.
-* Fees.
-* Courses.
-* Placement performance.
-* Faculty qualifications and achievements.
-* Infrastructure.
-* Academic curriculum.
-* Technical events.
-* Competitions and hackathons.
-* Internship opportunities.
-* Campus environment.
-* Other relevant parameters.
-
+•	Distance.
+•	Fees.
+•	Courses.
+•	Placement performance.
+•	Faculty qualifications and achievements.
+•	Infrastructure.
+•	Academic curriculum.
+•	Technical events.
+•	Competitions and hackathons.
+•	Internship opportunities.
+•	Campus environment.
+•	Other relevant parameters.
 The comparison feature will allow users to understand the differences between colleges and make their own final decision.
-
-### 1.2.4 INFORMATION AND VERIFICATION
-
+1.2.4 INFORMATION AND VERIFICATION
 Orgyo will provide information from both community contributors and external sources.
-
 Community contributors may include current students, alumni, faculty, staff, and other individuals associated with a college.
-
 Where possible, Orgyo will verify the association of contributors with the respective college. The system will identify the verification status of contributors and information where applicable.
-
 Verification will not necessarily mean that an opinion or statement is objectively true. Instead, it will indicate that the system has established an association between the contributor and the respective college or organization according to the defined verification process.
-
-### 1.2.5 FUTURE EXPANSION
-
+1.2.5 FUTURE EXPANSION
 The initial implementation of Orgyo will focus on college discovery, comparison, and preference-based matching.
-
 The architecture and overall concept of the platform may be extended in future versions to address other areas where users need to discover and evaluate suitable options according to their individual requirements.
-
 Possible future expansions may include:
-
-1. Job and career opportunity discovery based on user preferences, skills, qualifications, location, salary expectations, and other requirements.
-
-2. Organization and company discovery based on user-defined criteria.
-
-3. Career and professional opportunity matching.
-
-4. Additional decision-support solutions for other real-world problems that can be addressed through preference-based search, comparison, verification, and matching.
-
+1.	Job and career opportunity discovery based on user preferences, skills, qualifications, location, salary expectations, and other requirements.
+2.	Organization and company discovery based on user-defined criteria.
+3.	Career and professional opportunity matching.
+4.	Additional decision-support solutions for other real-world problems that can be addressed through preference-based search, comparison, verification, and matching.
 These features are considered future enhancements and are not part of the core requirements of the initial version unless explicitly included in a later version of the system.
-
-## 1.3 OUT OF SCOPE
-
+1.3 OUT OF SCOPE
 The following functionalities and responsibilities are outside the scope of the initial version of Orgyo:
-
-1. Orgyo will not guarantee admission to any college, university, or educational institute.
-
-2. Orgyo will not conduct or manage the official admission process of any college or university.
-
-3. Orgyo will not make admission decisions on behalf of colleges or educational institutions.
-
-4. Orgyo will not guarantee that a particular college is the best choice for every user.
-
-5. Orgyo will not guarantee that a user will receive admission to a college displayed by the system.
-
-6. Orgyo will not replace the need for physical visits where physical verification, counselling, documentation, or other activities are required.
-
-7. Orgyo will not guarantee the accuracy of every user-generated opinion or experience.
-
-8. Verification of a contributor will not automatically mean that every statement or opinion provided by that contributor is factually correct.
-
-9. Orgyo will not make decisions on behalf of students regarding their final college selection.
-
-10. Orgyo will not directly conduct college admissions, examinations, counselling, or document verification.
-
-11. Job-search, recruitment, and career-matching functionality will not be part of the initial implementation unless specifically included in a future version of the system.
-
-12. Orgyo will not guarantee employment, internships, job selection, or any other career outcome through future job-related features.
-
-## 1.4 DEFINITIONS, ACRONYMS AND ABBREVIATIONS
-
-### 1.4.1 Definitions
-
-**Orgyo:**
+1.	Orgyo will not guarantee admission to any college, university, or educational institute.
+2.	Orgyo will not conduct or manage the official admission process of any college or university.
+3.	Orgyo will not make admission decisions on behalf of colleges or educational institutions.
+4.	Orgyo will not guarantee that a particular college is the best choice for every user.
+5.	Orgyo will not guarantee that a user will receive admission to a college displayed by the system.
+6.	Orgyo will not replace the need for physical visits where physical verification, counselling, documentation, or other activities are required.
+7.	Orgyo will not guarantee the accuracy of every user-generated opinion or experience.
+8.	Verification of a contributor will not automatically mean that every statement or opinion provided by that contributor is factually correct.
+9.	Orgyo will not make decisions on behalf of students regarding their final college selection.
+10.	Orgyo will not directly conduct college admissions, examinations, counselling, or document verification.
+11.	Job-search, recruitment, and career-matching functionality will not be part of the initial implementation unless specifically included in a future version of the system.
+12.	Orgyo will not guarantee employment, internships, job selection, or any other career outcome through future job-related features.
+1.4 DEFINITIONS, ACRONYMS AND ABBREVIATIONS
+1.4.1 Definitions
+Orgyo:
 A web-based college discovery, comparison, and preference-based matching platform designed to help users identify educational institutes according to their individual requirements and priorities.
-
-**User:**
+User:
 A person who accesses and uses Orgyo to search, filter, compare, evaluate, or provide information related to colleges and courses.
-
-**Student:**
+Student:
 A user who primarily uses Orgyo to search for colleges, universities, courses, and other educational opportunities.
-
-**College:**
+College:
 An educational institution that provides undergraduate, postgraduate, diploma, or other academic programs.
-
-**Institute:**
+Institute:
 An educational institution such as a college, university, training institute, or other organization providing educational programs.
-
-**Course:**
+Course:
 An academic, professional, technical, or educational program offered by a college or institute.
-
-**Preference:**
+Preference:
 A factor or characteristic that a user considers important when selecting a college.
-
-**Priority:**
+Priority:
 The relative level of importance assigned by a user to a particular preference or parameter.
-
-**Constraint:**
+Constraint:
 A mandatory condition that a college must satisfy to be considered by the system.
-
-**Parameter:**
+Parameter:
 A measurable or evaluative factor used to describe, filter, compare, or evaluate a college.
-
-**College Match:**
+College Match:
 The degree to which a college satisfies the requirements and preferences specified by a particular user.
-
-**Verified Contributor:**
+Verified Contributor:
 A user whose association with a particular college or institute has been verified through the verification mechanism defined by Orgyo.
-
-**Community Data:**
+Community Data:
 Information, feedback, experience, or other college-related data contributed by current students, alumni, faculty, staff, or other individuals associated with a college.
-
-**External Data:**
+External Data:
 Information obtained from official websites, government databases, public datasets, or other permitted external sources.
-
-**Verification:**
+Verification:
 The process of confirming the association or source of a contributor or information according to the verification mechanism implemented by Orgyo.
-
-**Feedback:**
+Feedback:
 An experience, observation, opinion, review, or other information provided by a user regarding a college, course, faculty, infrastructure, campus environment, placement, or other relevant factor.
-
-**Comparison:**
+Comparison:
 The process of evaluating two or more colleges using selected parameters or criteria.
-
-**Matching:**
+Matching:
 The process of evaluating available colleges against a user's specified constraints and preferences to identify suitable results.
-
-**Future Enhancement:**
+Future Enhancement:
 A feature or functionality that is planned or considered for a future version of Orgyo but is not included in the requirements of the initial implementation.
-
-### 1.4.2 Acronyms and Abbreviations
-
-**SRS:** Software Requirements Specification
-
-**UI:** User Interface
-
-**UX:** User Experience
-
-**API:** Application Programming Interface
-
-**DB:** Database
-
-**DBMS:** Database Management System
-
-**OTP:** One-Time Password
-
-**URL:** Uniform Resource Locator
-
-**AI:** Artificial Intelligence
-
-**ML:** Machine Learning
-
-## 1.5 REFERENCES
-
+1.4.2 Acronyms and Abbreviations
+SRS: Software Requirements Specification
+UI: User Interface
+UX: User Experience
+API: Application Programming Interface
+DB: Database
+DBMS: Database Management System
+OTP: One-Time Password
+URL: Uniform Resource Locator
+AI: Artificial Intelligence
+ML: Machine Learning
+1.5 REFERENCES
 The following references and resources may be considered during the analysis, design, development, and documentation of the Orgyo system:
-
-1. IEEE/ISO/IEC guidelines and standards related to Software Requirements Specifications.
-
-2. Official websites of colleges, universities, and educational institutions for publicly available academic and institutional information.
-
-3. Official course, fee, curriculum, faculty, infrastructure, and placement information published by educational institutions.
-
-4. Government and publicly available educational datasets and databases.
-
-5. Publicly available information from permitted external sources.
-
-6. Software engineering and web application development documentation.
-
-7. Technical documentation of the programming languages, frameworks, databases, APIs, and other technologies used to develop Orgyo.
-
-## 1.6 OVERVIEW
-
+1.	IEEE/ISO/IEC guidelines and standards related to Software Requirements Specifications.
+2.	Official websites of colleges, universities, and educational institutions for publicly available academic and institutional information.
+3.	Official course, fee, curriculum, faculty, infrastructure, and placement information published by educational institutions.
+4.	Government and publicly available educational datasets and databases.
+5.	Publicly available information from permitted external sources.
+6.	Software engineering and web application development documentation.
+7.	Technical documentation of the programming languages, frameworks, databases, APIs, and other technologies used to develop Orgyo.
+1.6 OVERVIEW
 This Software Requirements Specification document describes the requirements, scope, functionality, constraints, assumptions, and overall characteristics of the Orgyo web application.
-
 Section 1 introduces Orgyo and defines its purpose, scope, data sources, major concepts, definitions, acronyms, references, and overall structure.
-
 The subsequent sections of this document will describe the overall system, system users and their roles, major system functions, functional requirements, non-functional requirements, external interfaces, data requirements, preference-based matching, verification mechanisms, system constraints, assumptions, dependencies, and other requirements necessary for the development and implementation of Orgyo.
-
 The primary objective of Orgyo is to provide a preference-based college discovery and comparison platform in which users can define what matters to them and receive college results based on their individual requirements rather than relying solely on general rankings or predefined recommendations.
-
 Orgyo will combine information from community contributors and external sources and use that information to support college discovery, filtering, comparison, and preference-based matching. The system will present relevant information and its available source or verification status so that users can independently evaluate the results and make their final decision.
-
 The platform will be designed with future extensibility in mind. Although the initial version will focus on educational institute discovery and matching, the underlying concept may later be extended to job discovery, career opportunities, organization discovery, and other preference-based decision-support solutions.
+
