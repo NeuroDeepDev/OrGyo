@@ -209,3 +209,324 @@ The primary objective of Orgyo is to provide a preference-based college discover
 Orgyo will combine information from community contributors and external sources and use that information to support college discovery, filtering, comparison, and preference-based matching. The system will present relevant information and its available source or verification status so that users can independently evaluate the results and make their final decision.
 The platform will be designed with future extensibility in mind. Although the initial version will focus on educational institute discovery and matching, the underlying concept may later be extended to job discovery, career opportunities, organization discovery, and other preference-based decision-support solutions.
 
+2. OVERALL DESCRIPTION
+2.1 Product Perspective
+
+Orgyo is a web-based college discovery, comparison, and preference-based matching platform. The system is designed to help students and other users discover and evaluate colleges and educational institutes according to their individual requirements, preferences, and priorities.
+
+The system will collect and organize information from multiple sources, including official college websites, government and publicly available educational databases, current students, alumni, faculty, staff, and other permitted external sources.
+
+Orgyo will provide search, filtering, comparison, preference-based matching, and information verification features. The system will not determine an objectively “best” college for every user. Instead, it will present colleges according to the requirements and priorities specified by each individual user.
+
+2.1.1 System Interfaces
+
+Orgyo may interact with the following external systems and services:
+
+Database System: Used to store user, college, course, preference, feedback, and verification data.
+External Data Sources: Used to obtain publicly available college and educational information.
+Authentication Services: Used for user authentication, where applicable.
+External APIs: May be used to obtain permitted educational, geographical, or other relevant information.
+Web Browsers: Used by users to access and interact with the Orgyo platform.
+
+The exact external interfaces will depend on the technologies and services selected during the implementation of the system.
+
+2.1.2 User Interfaces
+
+Orgyo shall provide a web-based user interface through which users can:
+
+Register and log in to the system.
+Search for colleges and courses.
+Specify preferences and priorities.
+Define mandatory constraints.
+Filter available colleges.
+Compare multiple colleges.
+View college and course information.
+View information sources and verification status, where applicable.
+Provide feedback or information according to their respective user roles.
+
+The user interface shall be designed to provide simple, consistent, and easy navigation for users with basic knowledge of web applications.
+
+2.1.3 Hardware Interfaces
+
+Orgyo does not require specialized hardware for normal users.
+
+The system shall be accessible through standard computing devices, including:
+
+Desktop computers
+Laptop computers
+Tablets
+Smartphones
+
+The server-side hardware shall provide sufficient processing power, memory, and storage capacity to operate the application, database, and associated services.
+
+2.1.4 Software Interfaces
+
+Orgyo will interact with the following software components:
+
+Web browsers
+Web/application server
+Database Management System
+Backend application framework
+Frontend technologies
+External APIs or services, where applicable
+Authentication and security components
+
+The specific technologies used for implementation may be finalized during the system design and development stages.
+
+2.1.5 Communications Interfaces
+
+Orgyo shall use standard web communication protocols for communication between users, the application server, database, and permitted external services.
+
+The system may use:
+
+HTTP/HTTPS: For communication between the client and server.
+REST APIs: For communication with external services, where required.
+TCP/IP: As the underlying network communication protocol.
+
+HTTPS shall be preferred for secure communication between the client and server.
+
+2.1.6 Memory Constraints
+
+The system shall operate within the available memory and storage resources of the client and server environments.
+
+The system should be designed to:
+
+Manage college and course information efficiently.
+Minimize unnecessary memory consumption.
+Support multiple users without excessive resource usage.
+Store application and database data efficiently.
+
+The exact memory and storage requirements will depend on the final deployment environment and expected system load.
+
+2.1.7 Operations
+
+The following operational activities shall be supported or managed by the system:
+
+User registration and authentication.
+College and course information management.
+Data collection and updating.
+Preference and matching operations.
+Information verification.
+User feedback management.
+Database backup and maintenance.
+System performance monitoring.
+Administrative management of system data and users.
+
+Administrators shall be responsible for authorized management and maintenance activities.
+
+2.1.8 Site Adaptation Requirements
+
+The system should be adaptable to different educational institutions, locations, and deployment environments.
+
+Site-specific configuration may include:
+
+Location and distance information.
+Currency and fee formats.
+Date and time formats.
+Educational terminology.
+Institution-specific information.
+Language support in future versions.
+Configuration of data sources and verification mechanisms.
+2.2 Product Functions
+
+The major functions of Orgyo shall include the following:
+
+2.2.1 User Management
+
+The system shall provide:
+
+User registration and login.
+User profile management.
+Management of user preferences and requirements.
+2.2.2 College and Course Search
+
+The system shall allow users to:
+
+Search for colleges.
+Search for courses.
+Search according to user-defined requirements.
+2.2.3 Preference Management
+
+The system shall allow users to:
+
+Define preferred parameters.
+Assign different priority levels to parameters.
+Define mandatory requirements and constraints.
+2.2.4 College Filtering
+
+The system shall allow users to filter colleges according to criteria such as:
+
+Distance
+Fees
+Course availability
+Location
+Facilities
+Other user-defined requirements
+2.2.5 Preference-Based Matching
+
+The system shall:
+
+Evaluate colleges against user-defined constraints and preferences.
+Identify colleges that satisfy mandatory requirements.
+Present colleges that closely match the user's specified preferences.
+
+The matching process shall represent suitability according to the user's requirements rather than an absolute ranking of colleges.
+
+2.2.6 College Comparison
+
+The system shall allow users to compare multiple colleges using parameters such as:
+
+Distance
+Fees
+Courses
+Placement performance
+Faculty qualifications and achievements
+Infrastructure
+Academic curriculum
+Technical events
+Competitions and hackathons
+Internship opportunities
+Campus environment
+2.2.7 College Information
+
+The system shall provide relevant information about:
+
+Colleges
+Courses
+Faculty
+Infrastructure
+Academic curriculum
+Placement performance
+Fees
+Campus environment
+Technical events
+Competitions
+Internship opportunities
+Research opportunities
+2.2.8 Information and Verification
+
+The system shall:
+
+Display the source of available information where applicable.
+Display contributor verification status.
+Distinguish community-contributed information from externally obtained information.
+Maintain information about the source of externally obtained data where required.
+
+Verification of a contributor shall indicate an established association with the respective college or organization and shall not necessarily indicate that every opinion or statement provided by that contributor is factually correct.
+
+2.2.9 Feedback
+
+The system shall allow eligible users to provide relevant feedback, experiences, observations, opinions, or other information regarding colleges, courses, faculty, infrastructure, campus environment, placements, and related factors.
+
+2.2.10 Administrative Management
+
+Administrators shall be able to manage:
+
+Users
+College information
+Course information
+Contributed information
+Verification processes
+Feedback
+Other system data
+2.3 User Characteristics
+
+Orgyo is intended for users who need to discover, compare, and evaluate colleges and educational institutes.
+
+2.3.1 Students
+
+Students are the primary users of Orgyo. They may use the system to:
+
+Search for colleges and courses.
+Define their requirements.
+Set preferences and priorities.
+Filter colleges.
+Compare colleges.
+Evaluate available information.
+
+The primary target group includes students who have completed or are completing their 12th standard.
+
+2.3.2 Parents or Guardians
+
+Parents or guardians may use Orgyo to:
+
+Explore colleges.
+Compare educational institutions.
+Review fees, location, facilities, placements, and other information.
+Support students during the college selection process.
+2.3.3 Community Contributors
+
+Current students, alumni, faculty, staff, and other individuals associated with a college may contribute relevant information or feedback.
+
+Where applicable, the system may verify their association with the respective college or institute.
+
+2.3.4 Administrators
+
+Administrators shall be responsible for authorized system management activities, including:
+
+User management.
+College and course information management.
+Data management.
+Verification processes.
+Feedback management.
+System maintenance.
+2.4 Constraints
+
+The development and operation of Orgyo may be subject to the following constraints:
+
+The system depends on the availability and quality of information obtained from different sources.
+External data sources may change their structure, availability, or access policies.
+User-generated information may not always be objectively accurate.
+Verification of a contributor does not guarantee that every statement or opinion provided by that contributor is factually correct.
+The system shall not guarantee admission to any college or educational institute.
+The system shall not conduct or manage the official admission process of any college or university.
+The system shall not make the final college selection decision on behalf of the user.
+System performance may be affected by available hardware, database capacity, network connectivity, and server resources.
+Security and privacy requirements shall be considered when handling user accounts and contributed information.
+The initial version shall primarily focus on college discovery, comparison, and preference-based matching.
+2.5 Assumptions and Dependencies
+2.5.1 Assumptions
+
+The development and operation of Orgyo are based on the following assumptions:
+
+Users will have access to an internet-enabled device.
+Users will have access to a modern web browser.
+Users will provide reasonably accurate preferences and requirements.
+Relevant college information will be available from official, public, community, or other permitted sources.
+Users will understand that matching results represent suitability according to their specified requirements and are not absolute rankings.
+Administrators will maintain the system and manage authorized information and verification processes.
+2.5.2 Dependencies
+
+The system may depend on:
+
+Availability of internet connectivity.
+Availability of the application server.
+Availability of the database server.
+Availability of permitted external data sources.
+Availability of external APIs, where applicable.
+Web browser compatibility.
+Third-party authentication or communication services, if implemented.
+Availability of updated college and educational information.
+2.6 Apportioning of Requirements
+
+The initial version of Orgyo shall primarily focus on the following functionalities:
+
+College discovery.
+Course discovery.
+Preference-based college matching.
+College filtering.
+College comparison.
+Information and source identification.
+Contributor verification.
+User feedback.
+
+The following features may be considered for future versions of the system:
+
+Job and career opportunity discovery.
+Job matching based on skills, qualifications, location, salary expectations, and user preferences.
+Organization and company discovery.
+Career and professional opportunity matching.
+Additional verification and decision-support features.
+Other preference-based solutions for real-world problems.
+
+These features shall be considered future enhancements and shall not be included in the core requirements of the initial version unless explicitly specified in a later version of the SRS. This is consistent with your existing scope, where job/career and other preference-based extensions are identified as future functionality.
